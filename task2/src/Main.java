@@ -1,12 +1,14 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
 
-        String circleFilePath = args[0];
-        String pointsFilePath = args[1];
+        Scanner scanner = new Scanner(System.in);
+        String circleFilePath = scanner.nextLine();
+        String pointsFilePath = scanner.nextLine();
 
         try {
             BufferedReader circleReader = new BufferedReader(new FileReader(circleFilePath));
